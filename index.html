@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OldPlutoX</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/oldplutox logo.jpg" alt="" id="logo">
+            <span id="name">OldPlutoX</span>
+        </div>
+
+        <nav>
+            <div class="close">
+                <img src="images/icon-close-menu.svg" alt="" class="close-menu">
+            </div> 
+
+            <ul>
+                <li class="blog"><a href="/blog">Blog</a></li>
+                <li class="register"><a href="/register">Create account</a></li>
+                <li class="login"><a href="/login" id="login">Login</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger">
+            <img src="images/icon-menu.svg" alt="" class="hamburger">
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="top-section left-section">
+                <h1 class="heading"> <span>Buy and</span> sell your crypto in minutes </h1>
+                <p class="description"> Trade with us and get instant and fast payment. We help you trade your assets at the best rates </p>
+            </section>
+    
+            <section class="bottom-section right-section">
+                <section class="section first-step sec-active">
+                    <div class="sell-crypto_buy-crypto">
+                        <div class="select sell-crypto select-active">sell crypto</div>
+                        <div class="select buy-crypto">buy crypto</div>
+                    </div>
+        
+                    <div class="form">
+                        <div class="control">
+                            <label for="crypto currency">Crypto currency</label>
+                            <select name="crypto currency" id="crypto">
+                                <option value="">Bitcoin</option>
+                                <option value="">Ethereum</option>
+                                <option value="">Tether</option>
+                                <option value="">BNB</option>
+                                <option value="">USD Coin</option>
+                                <option value="">XRP</option>
+                                <option value="">Dogecoin</option>
+                                <option value="">Litecoin</option>
+                                <option value="">TRON</option>
+                                <option value="">Avalanche</option>
+                                <option value="">Chainlink</option>
+                                <option value="">USDT Tether</option>
+                                <option value="">Ethereum Classic</option>
+                                <option value="">Bitcoin Cash</option>
+                            </select>
+                        </div>
+        
+                        <div class="control">
+                            <label for="amount">Amount</label>
+                            <input type="number" name="amount" id="amount-input" placeholder="NGN 0.00">
+                            <small></small>
+                        </div>
+                    </div>
+        
+                    <!--amount to receive or to buy-->
+                    <div class="amount-container">
+                        <div class="receive_pay">You receive</div>
+                        <div class="amount">NGN 0.00</div>
+                    </div>
+        
+                    <button class="first-step-btn">Continue</button>
+                </section>
+    
+                <div class="section second-step making-payment">
+                    <div class="second-container">
+                        <div class="top">
+                            <img src="images/icons8-left-arrow-50[1].png" alt="" class="back-payment">
+                            <div class="content">
+                                <div class="heading">Make payment</div>
+                                <p class="description">Make payment for the amount of crypto you are getting</p>
+                            </div>
+                        </div>
+        
+                        <form class="form">
+                            <div class="control">
+                                <select name="bank name" id="bank-name">
+                                    <option value="">Fidelity Bank</option>
+                                    <option value="">Zenith plc</option>
+                                    <option value="">United Bank of Africa</option>
+                                    <option value="">Heritage Bank</option>
+                                    <option value="">First Bank of Nigeria</option>
+                                    <option value="">Polaris Bank</option>
+                                    <option value="">Kuda Microfinance Bank</option>
+                                    <option value="">Opay Bank</option>
+                                    <option value="">Access Bank of Nigeria</option>
+                                    <option value="">Union Bank of Nigeria</option>
+                                </select>
+                            </div>
+        
+                            <div class="control">
+                                <input type="number" name="account number" id="account-number" class="account-number payment-input" placeholder="Account number">
+                                <small></small>
+                            </div>
+                            <div class="control">
+                                <input type="text" name="account name" id="account-name" class="account-name payment-input" placeholder="Account name">
+                                <small></small>
+                            </div>
+                            <div class="control">
+                                <input type="number" name="exp month" id="exp-month" class="exp-month payment-input" placeholder="Exp Month">
+                                <input type="number" name="exp year" id="exp-year" class="exp-year payment-input" placeholder="Exp Year">
+                                <small></small>
+                            </div>
+                            
+                            <div class="btn"><button type="submit" class="second-step-btn">Continue</button></div>
+                        </form>
+                    </div>
+                </div>
+    
+                <section class="section successful">
+                    <div class="top">
+                        <img src="images/icons8-left-arrow-50[1].png" alt="" class="back-transaction">
+                        <span class="heading">Transaction</span>
+                    </div>
+    
+                    <div class="third-container">
+                        <div class="thumb"><img src="images/thumb.jpg" alt=""></div>
+                        <p class="transaction-status">Your transaction is successful, in the next 2 to 30 mins your Naira will be sent to your bank account</p>
+                        <a href="/home"><button>Back Home</button></a>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

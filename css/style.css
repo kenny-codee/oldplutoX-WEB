@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Bruno Ace";
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 25px;
+  border-bottom: 1px solid hsl(240, 7%, 92%);
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  z-index: 2;
+  background-color: white;
+  box-shadow: 0 0 5px hsl(240, 2%, 70%);
+}
+header .logo {
+  color: rgb(43, 40, 40);
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  width: 25px;
+}
+header .logo span {
+  margin-left: 10px;
+}
+header nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  height: 100vh;
+  width: 75%;
+  padding: 40px 18px;
+  box-shadow: 0 0 15px;
+  transform: translateX(150%) scaleX(0);
+  transition: 0.4s ease-in-out;
+}
+header nav .close {
+  text-align: right;
+}
+header nav .close img {
+  cursor: pointer;
+}
+header nav ul {
+  margin: 2rem 1rem;
+}
+header nav ul li {
+  list-style-type: none;
+  margin: 40px 0;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(43, 40, 40);
+}
+header nav ul li a:hover {
+  font-weight: bold;
+}
+header nav ul li #login {
+  color: white;
+  background-color: hsl(213, 61%, 41%);
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+header nav ul .login {
+  margin-top: 40px;
+}
+header .nav-active {
+  transform: translateX(0%) scaleX(1);
+}
+header .hamburger img {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 15px 4rem;
+  margin-top: 5rem;
+}
+main a {
+  text-decoration: none;
+}
+main button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(213, 61%, 41%);
+  width: 60%;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 15px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-family: "Bruno Ace";
+}
+main button:active {
+  background-color: hsl(213, 56%, 46%);
+}
+main .top-section {
+  text-align: justify;
+}
+main .top-section h1 {
+  color: hsl(213, 61%, 41%);
+  font-size: 30px;
+  margin: 20px 0;
+}
+main .top-section h1 span {
+  color: rgb(43, 40, 40);
+}
+main .top-section p {
+  line-height: 22px;
+  color: hsl(232, 7%, 55%);
+}
+main .bottom-section {
+  margin-top: 4rem;
+  border: solid 1px hsl(232, 7%, 55%);
+  border-radius: 15px;
+  padding: 25px 20px;
+  padding-bottom: 35px;
+}
+main .bottom-section .first-step .sell-crypto_buy-crypto {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(229, 24%, 87%);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 90%;
+  margin: 15px auto;
+  font-size: 12px;
+}
+main .bottom-section .first-step .sell-crypto_buy-crypto div {
+  padding: 18px 20px;
+  text-transform: capitalize;
+  color: rgb(43, 40, 40);
+  cursor: pointer;
+}
+main .bottom-section .first-step .sell-crypto_buy-crypto .select-active {
+  background-color: hsl(213, 61%, 41%);
+  color: hsl(0, 0%, 100%);
+}
+main .bottom-section .first-step .form {
+  margin-top: 30px;
+  color: hsl(240, 2%, 28%);
+}
+main .bottom-section .first-step .form .control {
+  margin-top: 25px;
+}
+main .bottom-section .first-step .form .control label {
+  display: block;
+  text-align: justify;
+}
+main .bottom-section .first-step .form .control select,
+main .bottom-section .first-step .form .control input {
+  width: 90%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  border: solid 2px hsl(232, 7%, 55%);
+  color: hsl(240, 2%, 28%);
+  font-family: "Bruno Ace";
+}
+main .bottom-section .first-step .amount-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
+  position: relative;
+  color: hsl(232, 7%, 55%);
+}
+main .bottom-section .first-step .amount-container .amount {
+  position: absolute;
+  right: 7.5%;
+}
+main .bottom-section .second-step {
+  justify-content: start;
+  text-align: center;
+  margin-top: 15px;
+}
+main .bottom-section .second-step .second-container {
+  margin-left: 0px;
+}
+main .bottom-section .second-step .second-container .top {
+  display: flex;
+  align-items: baseline;
+  text-align: justify;
+}
+main .bottom-section .second-step .second-container .top img {
+  width: 25px;
+  cursor: pointer;
+}
+main .bottom-section .second-step .second-container .top .content {
+  margin-left: 25px;
+}
+main .bottom-section .second-step .second-container .top .content .heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(43, 40, 40);
+  margin-bottom: 0.8em;
+}
+main .bottom-section .second-step .second-container .top .content .description {
+  color: hsl(232, 7%, 55%);
+}
+main .bottom-section .second-step .second-container .form {
+  margin-top: 30px;
+  color: hsl(240, 2%, 28%);
+}
+main .bottom-section .second-step .second-container .form .control {
+  margin-top: 20px;
+}
+main .bottom-section .second-step .second-container .form .control select,
+main .bottom-section .second-step .second-container .form .control input {
+  width: 85%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-top: 15px;
+  border: solid 2px hsl(232, 7%, 55%);
+  color: hsl(240, 2%, 28%);
+  font-family: "Bruno Ace";
+}
+main .bottom-section .second-step .second-container .form .control #exp-month,
+main .bottom-section .second-step .second-container .form .control #exp-year {
+  width: 42%;
+}
+main .bottom-section .second-step .second-container .form .btn {
+  text-align: center;
+}
+main .bottom-section .successful {
+  margin-top: 15px;
+}
+main .bottom-section .successful .top {
+  display: flex;
+  align-items: center;
+}
+main .bottom-section .successful .top img {
+  width: 25px;
+  cursor: pointer;
+}
+main .bottom-section .successful .top .heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(43, 40, 40);
+  margin-left: 25px;
+}
+main .bottom-section .successful .third-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+main .bottom-section .successful .third-container img {
+  width: 50px;
+}
+main .bottom-section .successful .third-container .transaction-status {
+  margin: 1.5rem 0 2.5rem;
+  color: hsl(232, 7%, 55%);
+  padding: 0 1.5rem;
+  line-height: 22px;
+}
+main .bottom-section .error small {
+  color: rgb(255, 102, 0);
+  display: block;
+  text-align: start;
+  margin-top: 10px;
+  font-size: 13px;
+}
+main .bottom-section .success small {
+  display: none;
+}
+
+.section {
+  display: none;
+}
+
+.sec-active {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  header .hamburger,
+  header .close {
+    display: none;
+  }
+  header nav {
+    position: absolute;
+    top: 25px;
+    right: 10%;
+    background-color: unset;
+    height: 0px;
+    width: unset;
+    padding: 0px;
+    box-shadow: unset;
+    transform: unset;
+    transition: 0.4s ease-in-out;
+  }
+  header nav ul {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+  }
+  header nav ul li {
+    margin: 0px 18px;
+  }
+  header nav ul .login {
+    margin-top: 0px;
+  }
+  main {
+    padding: 2% 5% 3%;
+  }
+  main .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 50px;
+  }
+}
+@media only screen and (min-width: 1114px) {
+  main {
+    padding: 4% 12% 8%;
+  }
+  main .container {
+    grid-gap: 100px;
+  }
+  main .top-section h1 {
+    color: hsl(213, 61%, 41%);
+    font-size: 37px;
+    margin: 20px 0;
+  }
+  main .top-section h1 span {
+    color: rgb(43, 40, 40);
+  }
+  main .top-section p {
+    line-height: 25px;
+    color: hsl(232, 7%, 55%);
+    font-size: 18px;
+  }
+  main .bottom-section .first-step .sell-crypto_buy-crypto {
+    font-size: 15px;
+  }
+} /*# sourceMappingURL=style.css.map */

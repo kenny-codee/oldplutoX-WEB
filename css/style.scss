@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Bruno Ace';
+}
+
+//mobile design
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-bottom: 1px solid hsl(240, 7%, 92%);
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0 0 5px hsl(240, 2%, 70%);
+
+    .logo{
+        color: rgb(43, 40, 40);
+        font : {
+            weight: 700;
+            size: 18px;
+        }
+        img{
+            width: 25px;
+        }
+        display: flex;
+        align-items: center;
+        span{
+            margin-left: 10px;
+        }
+    }
+    
+    nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: white;
+        height: 100vh;
+        width: 75%;
+        padding: 40px 18px;
+        box-shadow: 0 0 15px;
+        transform: translateX(150%) scaleX(0);
+        transition: .4s ease-in-out;
+        .close{
+            text-align: right;
+            img{cursor: pointer;}
+        }
+        ul{
+            margin: 2rem 1rem;
+            li{
+                list-style-type: none;
+                margin: 40px 0;
+                a{
+                    text-decoration: none;
+                    font-size: 15px;
+                    color: rgb(43, 40, 40);
+                    &:hover{font-weight: bold;}
+                }
+    
+                #login{
+                    color: white;
+                    background-color: hsl(213, 61%, 41%);
+                    padding: 8px 20px;
+                    border-radius: 10px;
+                }
+            }
+            .login{margin-top: 40px;}
+        }
+    }
+    .nav-active{transform: translateX(0%) scaleX(1);}
+
+    .hamburger img{cursor: pointer;}
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 15px 4rem;
+    margin-top: 5rem;
+    a{
+        text-decoration: none;
+    }
+
+    //applies to all btn in the container
+    button{
+        color: hsl(0%, 0%, 100%);
+        background-color: hsl(213, 61%, 41%);
+        width: 60%;
+        padding: 10px;
+        font-size: 15px;
+        border: none;
+        border-radius: 15px;
+        margin-top: 30px;
+        cursor: pointer;
+        &:active{background-color: hsl(213, 56%, 46%);}
+        font-family: 'Bruno Ace';
+    }
+    
+    .top-section{
+        text-align: justify;
+        h1{
+            color: hsl(213, 61%, 41%);
+            span{color: rgb(43, 40, 40);}
+            font-size: 30px;
+            margin: 20px 0;
+        }
+        p{
+            line-height: 22px;
+            color: hsl(232, 7%, 55%);
+        }
+    }
+
+    .bottom-section{
+        margin-top: 4rem;
+        border: solid 1px hsl(232, 7%, 55%);
+        border-radius: 15px;
+        padding:  25px 20px;
+        padding-bottom: 35px;
+
+        .first-step{
+            //display: none;
+            .sell-crypto_buy-crypto{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: hsl(229, 24%, 87%);
+                border-radius: 15px;
+                overflow: hidden;
+                width: 90%;
+                margin: 15px auto;
+                font-size: 12px;
+                div{
+                    padding: 18px 20px;
+                    text-transform: capitalize;
+                    color: rgb(43, 40, 40);
+                    cursor: pointer;
+                }
+                .select-active{
+                    background-color: hsl(213, 61%, 41%);
+                    color: hsl(0%, 0%, 100%);
+                }
+            }
+
+            .form{
+                margin-top: 30px;
+                color: hsl(240, 2%, 28%);
+                .control{
+                    margin-top: 25px;
+                    label{
+                        display: block;
+                        text-align: justify;
+                    }
+                    select,input{
+                        width: 90%;
+                        padding: 10px;
+                        font-size: 15px;
+                        border-radius: 10px;
+                        margin-top: 15px;
+                        border: solid 2px hsl(232, 7%, 55%);
+                        color: hsl(240, 2%, 28%);
+                        font-family: 'Bruno Ace'; 
+                    }
+                }
+            }
+
+            .amount-container{
+                display: flex;
+                justify-content: space-between;
+                margin: 2em 0;
+                position: relative;
+                color: hsl(232, 7%, 55%);
+                .amount{
+                    position: absolute;
+                    right: 7.5%;
+                }
+            }
+        }
+
+        .second-step{
+            justify-content: start;
+            text-align: center;
+            margin-top: 15px;
+            .second-container{
+                margin-left: 0px;
+                .top{
+                    display: flex;
+                    align-items: baseline;
+                    text-align: justify;
+                    img{
+                        width: 25px;
+                        cursor: pointer;
+                    }
+                    .content{
+                        margin-left: 25px;
+                        .heading{
+                            font-size: 18px;
+                            font-weight: 700;
+                            color: rgb(43, 40, 40);
+                            margin-bottom: .8em;
+                        }
+                        .description{
+                            color: hsl(232, 7%, 55%);
+                        }
+                    }
+                }
+
+                form{
+                    margin-top: 30px;
+                    color: hsl(240, 2%, 28%);
+                    .control{
+                        margin-top: 20px;
+                        select,input{
+                            width: 85%;
+                            padding: 10px;
+                            font-size: 14px;
+                            border-radius: 10px;
+                            margin-top: 15px;
+                            border: solid 2px hsl(232, 7%, 55%);
+                            color: hsl(240, 2%, 28%);
+                            font-family: 'Bruno Ace';
+                        }
+                        #exp-month, #exp-year{
+                            width: 42%;
+                        }
+                    }
+                    .btn{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .successful{
+            margin-top: 15px;
+            .top{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 25px;
+                    cursor: pointer;
+                }
+                .heading{
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: rgb(43, 40, 40);
+                    margin-left: 25px;
+                }
+            }
+
+            .third-container{
+                margin-top: 3rem;
+                text-align: center;
+                img{width: 50px;}
+                .transaction-status{
+                    margin: 1.5rem 0 2.5rem;
+                    color: hsl(232, 7%, 55%);
+                    padding: 0 1.5rem;
+                    line-height: 22px;
+                }
+            }
+        }
+        .error{
+            small{
+                color: rgb(255, 102, 0);
+                display: block;
+                text-align: start;
+                margin-top: 10px;
+                font-size: 13px;
+            }
+        }
+        .success{
+            small{display: none;}
+        }
+    }
+}
+.section{display: none;}
+.sec-active{display: block;} //javascript styling
+
+@media only screen and (min-width: 768px) {
+    header{
+        .hamburger, .close{display: none;}
+
+        nav{
+            position: absolute;
+            top: 25px;
+            right: 20%;
+            background-color: unset;
+            height: 0px;
+            width: unset;
+            padding: 0px;
+            box-shadow: unset;
+            transform: unset;
+            transition: .4s ease-in-out;
+
+            ul{
+                margin: 0px;
+                display: flex;
+                align-items: center;
+                li{
+                    margin: 0px 18px;
+                }
+                .login{margin-top: 0px;}
+            }
+        }
+    }
+
+    main{
+        padding: 2% 5% 3%;
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            grid-gap: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1114px){
+    main{
+        padding: 4% 12% 8%;
+        .container{
+            grid-gap: 100px;
+        }
+        .top-section{
+            h1{
+                color: hsl(213, 61%, 41%);
+                span{color: rgb(43, 40, 40);}
+                font-size: 37px;
+                margin: 20px 0;
+            }
+            p{
+                line-height: 25px;
+                color: hsl(232, 7%, 55%);
+                font-size: 18px;
+            }
+        }
+
+        .bottom-section{
+            .first-step{
+                .sell-crypto_buy-crypto{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
